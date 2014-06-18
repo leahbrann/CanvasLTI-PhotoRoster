@@ -1,0 +1,21 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "neat/neat-helpers";
+
+body {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+
+section {
+  @include outer-container;
+  text-align: center;
+  margin-bottom: 3em;
+
+   .student {
+   @include span-columns(3);
+   @include omega(4n);
+    
+    img {
+        max-width: 90%;
+        }
+    }
+}
+

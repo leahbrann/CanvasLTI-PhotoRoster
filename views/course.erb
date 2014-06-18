@@ -1,0 +1,14 @@
+<h1> Course Photo Roster: <%= @course_title %> </h1>
+
+<section>
+
+<% @course_enrollments.each do |student| %>
+	<div class = "student">
+		<img src =
+		<%= "#{@photos_path}#{student['sis_user_id']}.JPG" %> >
+		<p><%= "#{student['name']}" %></p>
+	</div>
+<% end %>
+
+</section>
+
